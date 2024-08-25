@@ -1,6 +1,7 @@
 import BallImage from '@/assets/images/cursor.png';
 import OtherImage from '@/assets/images/message.png';
 import Image from 'next/image';
+import Link from 'next/link'; 
 
 export const Hero = () => {
   return (
@@ -26,7 +27,9 @@ export const Hero = () => {
         </p>
         </div>
         <div className="flex justify-center mt-8">
-          <button className="bg-white text-black py-3 px-5 rounded-lg font-medium">Get Started</button>
+          <Link href="/sign-in">
+            <button className="bg-white text-black py-3 px-5 rounded-lg font-medium">Get Started</button>
+          </Link>
         </div>
       </div>
     
